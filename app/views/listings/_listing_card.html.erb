@@ -1,0 +1,7 @@
+<%= link_to listing do %>
+  <div class="w-full">
+    <%= listing.title %>
+    <%= image_tag(listing.images.first, class: 'w-80 rounded-lg overflow-hidden') if listing.images.any? %>
+    <p class="text-lg font-bold"> <%= listing.title %></p>
+  </div>
+<% end %>
